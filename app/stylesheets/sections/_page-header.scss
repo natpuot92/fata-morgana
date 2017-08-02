@@ -1,0 +1,43 @@
+.page-header__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  min-height: 56px;
+
+  color: #010101;
+}
+
+.page-header__logo {
+  display: block;
+  width: 175px;
+  min-height: 30px;
+  margin-right: 6.3%;
+
+  background: url('../images/logo.png') no-repeat center;
+  background-size: contain;
+}
+
+.page-header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  max-width: 570px;
+  width: 100%;
+}
+
+.page-header__phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  align-items: center;
+
+  max-width: 287px;
+  width: 100%;
+}
+
+.page-header__nav-link {
+  color: #010101;
+}
