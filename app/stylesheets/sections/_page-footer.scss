@@ -45,6 +45,9 @@
   flex-direction: column;
   align-items: flex-end;
   margin-left: auto;
+
+  max-width: 239px;
+  width: 100%;
 }
 
 .page-footer__social-link {
@@ -57,6 +60,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  max-width: 239px;
+  width: 100%;
 
   margin-top: 40px;
 }
@@ -85,13 +91,55 @@
   background: url('../images/social-fb.png') no-repeat center;
 }
 
+.page-footer__social-link-1:hover {
+  background: url('../images/social-vk-hover.png') no-repeat center;
+}
+
+.page-footer__social-link-2:hover {
+  background: url('../images/social-ok-hover.png') no-repeat center;
+}
+
+.page-footer__social-link-3:hover {
+  background: url('../images/social-inst-hover.png') no-repeat center;
+}
+
+.page-footer__social-link-4:hover {
+  background: url('../images/social-vimeo-hover.png') no-repeat center;
+}
+
+.page-footer__social-link-5:hover {
+  background: url('../images/social-tw-hover.png') no-repeat center;
+}
+
+.page-footer__social-link-6:hover {
+  background: url('../images/social-fb-hover.png') no-repeat center;
+}
+
 .page-footer__bottom-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   margin-top: 46px;
 }
 
+.page-footer__btn-wrapper {
+  position: relative;
+}
 
+.page-footer-btn__gradient {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  display: block;
+  opacity: 0;
 
+  border-radius: 20px;
+  padding: 8px 21px 8px;
+  background: #fff;
+
+  transition: opacity 0.3s;
+}
+
+.page-footer-btn__gradient:hover {
+  opacity: 1;
+}

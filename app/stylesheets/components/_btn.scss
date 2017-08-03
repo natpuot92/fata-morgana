@@ -1,9 +1,9 @@
 .btn {
+  position: relative;
   display: inline-block;
   font-size: 14px;
   color: #010101;
   padding: 10px 23px 10px;
-  border: 2px solid #d7456f;
   border-radius: 25px;
 }
 
@@ -26,6 +26,5 @@
     height: 12px;
 
     background: url('../images/btn-arrow.png') no-repeat center;
-
   }
 }

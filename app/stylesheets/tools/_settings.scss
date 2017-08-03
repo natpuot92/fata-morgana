@@ -22,3 +22,17 @@ a {
   padding: 0 30px;
   margin: 0 auto;
 }
+
+.slick-slide {
+    &:focus, a {
+      outline: none;
+    }
+  }
+
+#prev:focus {
+  outline: none;
+}
+
+#next:focus {
+  outline: none;
+}
