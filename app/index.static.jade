@@ -46,7 +46,7 @@ body
         .services__item-block.services__foto
           .services__item-block-1.services__foto-1
             span.services__item-block-1-text.services__foto-title
-              | видеосъемка
+              | фотография
           .services__item-block-2.services__foto-2
             .services__item-block-2-dark.services__foto-2-dark
               .services__item-block-2-dark-frame.services__foto-2-dark-frame
@@ -58,7 +58,7 @@ body
         .services__item-block.services__organisation
           .services__item-block-1.services__organisation-1
             span.services__item-block-1-text.services__organisation-title
-              | видеосъемка
+              | организация мереприятий
           .services__item-block-2.services__organisation-2
             .services__item-block-2-dark.services__organisation-2-dark
               .services__item-block-2-dark-frame.services__organisation-2-dark-frame
@@ -80,44 +80,47 @@ body
                   | Подробнее
                   span.btn-services-arrow
       .us
-        .us__foto
-          img(src="images/us.png").us__foto-img
-        .us__text
-          .us__text-title
-            | Давайте знакомиться!
-          .us__text-desc
-            div
-              | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст..
-            div
-              | Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.
-            div
-              | За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
+        .container.us-container
+          .us__foto
+            img(src="images/us.png").us__foto-img
+          .us__text
+            .us__text-title
+              | Давайте знакомиться!
+            .us__text-desc
+              div
+                | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст..
+              div
+                | Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.
+              div
+                | За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
       .us-social
-        .us-social__container-1
-          .us-social__container-1-title
-            | мы в социальных сетях
-          .us-social__container-1-text
-            | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
-          .us-social__container-1-text
-            | Lorem Ipsum используют потому, что тот обеспечивает
-          a(href="#").btn.us-social-btn
-            | Вступить в группу вконтакте
-        .us-social__slider
-          .us-social__slid.us-social__slid-1
-            img(src="images/phone.png")
-          .us-social__slid.us-social__slid-2
-            img(src="images/phone.png")
-          .us-social__slid.us-social__slid-3
-            img(src="images/phone.png")
-        .us-social__slider-arrows
+        .container.us-social__container
+          .us-social__container-1
+            .us-social__container-1-title
+              | мы в социальных сетях
+            .us-social__container-1-text
+              | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+            .us-social__container-1-text
+              | Lorem Ipsum используют потому, что тот обеспечивает
+            a(href="#").btn.us-social-btn
+              | Вступить в группу вконтакте
+          .us-social__container-2
+            .us-social__slider
+              .us-social__slid.us-social__slid-1
+                img(src="images/phone.png")
+              .us-social__slid.us-social__slid-2
+                img(src="images/phone.png")
+              .us-social__slid.us-social__slid-3
+                img(src="images/phone.png")
+            .us-social__slider-arrows
       .fotos
-        .fotos__wrapper-1
+        .fotos__wrapper.fotos__wrapper-1
           .fotos__wrapper-1-foto-1
           .fotos__wrapper-1-foto-2
-        .fotos__wrapper-2
+        .fotos__wrapper.fotos__wrapper-2
           .fotos__wrapper-2-foto-1
           .fotos__wrapper-2-foto-2
-        .fotos__wrapper-3
+        .fotos__wrapper.fotos__wrapper-3
           .fotos__wrapper-3-foto-1
           .fotos__wrapper-3-foto-2
           .fotos__wrapper-3-foto-3
@@ -127,36 +130,46 @@ body
             | Схема нашей работы
           .how-work__items
             .how-work__item
-              .how-work__icon
+              .how-work__icon.how-work__icon-1
               .how-work__text-bold
-                | Знакомство и обсуждение деталей
+                | Знакомство
+                br
+                | и обсуждение деталей
               .how-work__text-light
                 | Давно выяснено, что при оценке дизайна и композиции читаемый екст мешает
-          .how-work__item
-              .how-work__icon
+            .how-work__item
+              .how-work__icon.how-work__icon-2
               .how-work__text-bold
-                | Составление сметы и плана работы
+                | Составление сметы
+                br
+                | и плана работы
               .how-work__text-light
                 | Давно выяснено, что при оценке дизайна и композиции читаемый екст мешает
-          .how-work__item
-              .how-work__icon
+            .how-work__item
+              .how-work__icon.how-work__icon-3
               .how-work__text-bold
-                | Подписание договора и внесение предоплаты
+                | Подписание договора
+                br
+                | и внесение предоплаты
               .how-work__text-light
                 | Давно выяснено, что при оценке дизайна и композиции читаемый екст мешает
-          .how-work__item
-              .how-work__icon
+            .how-work__item
+              .how-work__icon.how-work__icon-4
               .how-work__text-bold
-                | Работа над проектом
+                | Работа
+                br
+                | над проектом
               .how-work__text-light
                 | Давно выяснено, что при оценке дизайна и композиции читаемый екст мешает
-          .how-work__item
-              .how-work__icon
+            .how-work__item
+              .how-work__icon.how-work__icon-5
               .how-work__text-bold
                 | Довольный клиент
               .how-work__text-light
                 | Давно выяснено, что при оценке дизайна и композиции читаемый екст мешает сосредоточиться
       .reviews
+        .reviews__title
+          | отзывы  клиентов
         .reviews__slider
           .reviews__slid.reviews__slid-1
             .reviews__slide-foto.reviews__slide-foto-1
@@ -166,43 +179,57 @@ body
               .reviews__slide-text
                 | Наша компания существует с 2007 года. Чем же мы лучше других? В то время, пока остальные следуют трендам, мы их создавали и продолжаем создавать!Говорят, все начинается с идеи. В недалеком прошлом два человека заболев ей, нашли массу единомышленников. Создав команду, сильную, молодую, творческую и всегда готовую к любым экспериментам
           .reviews__slid.reviews__slid-2
-            .reviews__slide-foto.reviews__slide-foto-1
+            .reviews__slide-foto.reviews__slide-foto-2
             .reviews__slide-text-wrapper
               .reviews__slide-title
                 | Светлана и Алексей
               .reviews__slide-text
                 | Наша компания существует с 2007 года. Чем же мы лучше других? В то время, пока остальные следуют трендам, мы их создавали и продолжаем создавать!Говорят, все начинается с идеи. В недалеком прошлом два человека заболев ей, нашли массу единомышленников. Создав команду, сильную, молодую, творческую и всегда готовую к любым экспериментам
           .reviews__slid.reviews__slid-3
-            .reviews__slide-foto.reviews__slide-foto-1
+            .reviews__slide-foto.reviews__slide-foto-3
+            .reviews__slide-text-wrapper
+              .reviews__slide-title
+                | Светлана и Алексей
+              .reviews__slide-text
+                | Наша компания существует с 2007 года. Чем же мы лучше других? В то время, пока остальные следуют трендам, мы их создавали и продолжаем создавать!Говорят, все начинается с идеи. В недалеком прошлом два человека заболев ей, нашли массу единомышленников. Создав команду, сильную, молодую, творческую и всегда готовую к любым экспериментам
+          .reviews__slid.reviews__slid-4
+            .reviews__slide-foto.reviews__slide-foto-4
             .reviews__slide-text-wrapper
               .reviews__slide-title
                 | Светлана и Алексей
               .reviews__slide-text
                 | Наша компания существует с 2007 года. Чем же мы лучше других? В то время, пока остальные следуют трендам, мы их создавали и продолжаем создавать!Говорят, все начинается с идеи. В недалеком прошлом два человека заболев ей, нашли массу единомышленников. Создав команду, сильную, молодую, творческую и всегда готовую к любым экспериментам
       .contacts
-        .contacts__text
-          .contacts__title
-            | контакты
-          .contacts__item.contacts__address
-            .contacts__item-bold
-              | Адрес:
-            .contacts__item-light
-              | 344001, г. Ростов-на-Дону ул. Писательская 65/5 (р-н Текучёвского моста)
-          .contacts__item.contacts__address
-            .contacts__item-bold
-              | Режим работы:
-            .contacts__item-light
-              | Пн-Пт с 09.00-18.00 Сб, Вс - выходной
-          .contacts__item.contacts__address
-            .contacts__item-bold
-              | E-mail:
-            .contacts__item-light
-              | info@olvya.ru
-          .contacts__item.contacts__address
-            .contacts__item-bold
-              | Телефон:
-            .contacts__item-light
-              | (863) 236-35-05
+        .contacts-wrapper
+          .contacts__text
+            .contacts__title
+              | контакты
+            .contacts__item-wrapper
+              .contacts__item.contacts__address
+                .contacts__item-bold
+                  | Адрес:
+                .contacts__item-light
+                  | 344001, г. Ростов-на-Дону
+                  br
+                  | ул. Писательская 65/5 (р-н Текучёвского моста)
+              .contacts__item.contacts__work
+                .contacts__item-bold
+                  | Режим работы:
+                .contacts__item-light
+                  | Пн-Пт с 09.00-18.00
+                  br
+                  | Сб, Вс - выходной
+              .contacts__item.contacts__email
+                .contacts__item-bold
+                  | E-mail:
+                .contacts__item-light
+                  | info@olvya.ru
+              .contacts__item.contacts__phone
+                .contacts__item-bold
+                  | Телефон:
+                .contacts__item-light
+                  | (863) 236-35-05
+        .contacts__map
       footer.page-footer
         .container.footer-container
           .page-footer__top-wrapper
@@ -244,12 +271,12 @@ body
                 a(href="#").btn.page-footer-btn
                   | Заказать звонок
                 .page-footer__social-links
-                  a(href="#").page-footer__social-link
-                  a(href="#").page-footer__social-link
-                  a(href="#").page-footer__social-link
-                  a(href="#").page-footer__social-link
-                  a(href="#").page-footer__social-link
-                  a(href="#").page-footer__social-link
+                  a(href="#").page-footer__social-link.page-footer__social-link-1
+                  a(href="#").page-footer__social-link.page-footer__social-link-2
+                  a(href="#").page-footer__social-link.page-footer__social-link-3
+                  a(href="#").page-footer__social-link.page-footer__social-link-4
+                  a(href="#").page-footer__social-link.page-footer__social-link-5
+                  a(href="#").page-footer__social-link.page-footer__social-link-6
 
           .page-footer__bottom-wrapper
             .page-footer__copyright

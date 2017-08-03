@@ -1,0 +1,45 @@
+.us {
+  position: relative;
+  z-index: 1;
+  margin-top: 56px;
+}
+
+.us-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.us__foto {
+  width: 50%;
+}
+
+.us__foto img {
+  display: block;
+  width: 100%;
+}
+
+.us__text {
+  max-width: 45.1%;
+  width: 100%;
+}
+
+.us__text-title {
+  font-size: 30px;
+  font-family: BebasNeueRegular;
+  line-height: 0.8;
+  letter-spacing: 0.8px;
+}
+
+.us__text-desc {
+  margin-top: 48px;
+}
+
+.us__text-desc {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.us__text-desc div {
+  margin-bottom: 25px;
+}

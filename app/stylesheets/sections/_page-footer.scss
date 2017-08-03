@@ -1,0 +1,97 @@
+.page-footer {
+  min-height: 272px;
+  padding-top: 43px;
+  padding-bottom: 30px;
+  overflow: hidden;
+
+  color: #fff;
+
+  background: #281d1b;
+}
+
+.page-footer__top-wrapper-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.page-footer__items {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 7%;
+}
+
+.page-footer__item {
+  margin-bottom: 8px;
+
+  color: #fff;
+}
+
+.page-footer__tel {
+  margin-bottom: 19px;
+
+  font-family: Roboto-Bold;
+  font-size: 24px;
+}
+
+.page-footer-btn {
+  border: none;
+  background-image: linear-gradient(30deg, #f7aa81, #ef5c53 55%, #d7456f);
+  color: #fff;
+}
+
+.page-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+.page-footer__social-link {
+  display: block;
+  width: 28px;
+  height: 19px;
+}
+
+.page-footer__social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 40px;
+}
+
+.page-footer__social-link-1 {
+  background: url('../images/social-vk.png') no-repeat center;
+}
+
+.page-footer__social-link-2 {
+  background: url('../images/social-ok.png') no-repeat center;
+}
+
+.page-footer__social-link-3 {
+  background: url('../images/social-inst.png') no-repeat center;
+}
+
+.page-footer__social-link-4 {
+  background: url('../images/social-vimeo.png') no-repeat center;
+}
+
+.page-footer__social-link-5 {
+  background: url('../images/social-tw.png') no-repeat center;
+}
+
+.page-footer__social-link-6 {
+  background: url('../images/social-fb.png') no-repeat center;
+}
+
+.page-footer__bottom-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 46px;
+}
+
+
+

@@ -1,0 +1,80 @@
+.us-social {
+  position: relative;
+  z-index: 2;
+  background: #ececec;
+}
+
+.us-social__container {
+  display: flex;
+  flex-direction: row;
+
+  min-height: 25vw;
+  padding-bottom: 130px;
+
+  overflow: visible;
+}
+
+.us-social__container-1 {
+  width: 35%;
+  padding-top: 10%;
+}
+
+.us-social__container-1-title {
+  font-family: BebasNeueRegular;
+  font-size: 30px;
+  line-height: 0.8;
+  letter-spacing: 0.8px;
+}
+
+.us-social__container-1-text {
+  max-width: 375px;
+  width: 100%;
+
+  margin-top: 40px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.us-social__container-2 {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  min-height: 100%;
+}
+
+.us-social__slider {
+  position: absolute;
+  z-index: 2;
+  top: -20px;
+  display: block;
+  width: 55%;
+  margin: 0 auto;
+}
+
+.us-social__slid {
+  width: 100%;
+  padding: 0 50px 0 50px;
+}
+
+.us-social__slid img {
+  display: block;
+  width: 100%;
+}
+
+.us-social-btn {
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 41px;
+
+  color: #010101;
+  padding: 14px 19px 14px 29px;
+  border: 2px solid #d7456f;
+  border-radius: 25px;
+
+  color: #ffffff;
+  border: none;
+  background-image: linear-gradient(30deg, #f7aa81, #ef5c53 55%, #d7456f);
+}
