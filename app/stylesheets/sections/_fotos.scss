@@ -3,7 +3,7 @@
   flex-direction: row;
 
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 30%;
   background-size: cover;
 
   min-height: 60vw;
@@ -35,6 +35,8 @@
   opacity: 0;
 
   background-color: rgba(38, 17, 13, 0.3);
+
+  transition: opacity 0.3s;
 }
 
 .fotos__item-dark-frame {
@@ -135,6 +137,6 @@
   flex-grow: 1;
 }
 
-//.hidden {
-//  background: url('../images/main-foto-4.jpg') no-repeat center;
-//}
+.btn-fotos-gradient {
+  padding-top: 10px;
+}
