@@ -3,7 +3,6 @@ import slick from 'slick-carousel'
 
  $('.us-social__slider').slick({
     slidesToShow: 1,
-    fade: true,
     centerMode: true,
     appendArrows: $('.us-social__slider-arrows'),
     prevArrow: '<button id="prev" type="button" class="slider-prev us-social-prev"></button>',
@@ -20,13 +19,13 @@ $('.reviews__slider').slick({
 });
 
 var backgroundUrl = {
-  foto1: 'url("./images/main-foto-1.jpg")',
-  foto2: 'url("./images/main-foto-2.jpg")',
-  foto3: 'url("./images/main-foto-3.jpg")',
-  foto4: 'url("./images/main-foto-4.jpg")',
-  foto5: 'url("./images/main-foto-5.jpg")',
-  foto6: 'url("./images/main-foto-6.jpg")',
-  foto7: 'url("./images/main-foto-7.jpg")'
+  foto1: 'url("./images/big-foto-1.jpg")',
+  foto2: 'url("./images/big-foto-2.jpg")',
+  foto3: 'url("./images/big-foto-3.jpg")',
+  foto4: 'url("./images/big-foto-4.jpg")',
+  foto5: 'url("./images/big-foto-5.jpg")',
+  foto6: 'url("./images/big-foto-6.jpg")',
+  foto7: 'url("./images/big-foto-7.jpg")'
 }
 
 var allElements = $('.fotos__wrapper-foto')
@@ -38,7 +37,7 @@ for (var i = 0; allElements.length > i; i++) {
     var dataEl = $(elememt).attr('data-foto');
 
     $('.fotos').css('backgroundImage', backgroundUrl[dataEl]);
-
+    $('.fotos').addClass('fotos-bg');
     for (var i = 0; allElements.length > i; i++) {
       $(allElements[i]).css('backgroundImage', 'none');
     }
@@ -52,12 +51,10 @@ for (var i = 0; allElements.length > i; i++) {
     var element = 'foto' + (i + 1);
     console.log(i);
     $(allElements[i]).css('backgroundImage', backgroundUrl[element]);
-
+    $('.fotos').removeClass('fotos-bg');
     $('.fotos').css('backgroundImage', 'none');
   }
   });
 }
 
-$('.fotos__wrapper-3-foto-3').mouseleave(function(evt) {
 
-})

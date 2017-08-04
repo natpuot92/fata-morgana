@@ -4,7 +4,9 @@
 
   background-repeat: no-repeat;
   background-position: 50% 30%;
-  background-size: cover;
+  background-size: 100%;
+
+  will-change: auto;
 
   min-height: 60vw;
 }
@@ -55,6 +57,8 @@
 
 .fotos__wrapper-foto:hover .fotos__item-dark {
   opacity: 1;
+  animation-name: frame-fotos;
+  animation-duration: 0.8s;
 }
 
 .fotos__item-dark-frame-text {

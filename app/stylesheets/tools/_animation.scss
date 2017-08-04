@@ -1,0 +1,45 @@
+@keyframes frame {
+  0% {
+    opacity: 0;
+    padding: 0;
+  }
+  100% {
+    opacity: 1;
+    padding: 4%;
+  }
+}
+
+@keyframes frame-fotos {
+  0% {
+    opacity: 0;
+    padding: 0;
+  }
+  100% {
+    opacity: 1;
+    padding: 15px;
+  }
+}
+
+@keyframes fotos-bg {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fotos-bg-size {
+  0% {
+    background-size: 110%
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+.fotos-bg {
+  animation-name: fotos-bg, fotos-bg-size;
+  animation-duration: 0.8s, 5s;
+}
+
