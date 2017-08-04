@@ -20,13 +20,13 @@ $('.reviews__slider').slick({
 });
 
 var backgroundUrl = {
-  foto1: 'url("../images/main-foto-1.jpg")',
-  foto2: 'url("../images/main-foto-2.jpg")',
-  foto3: 'url("../images/main-foto-3.jpg")',
-  foto4: 'url("../images/main-foto-4.jpg")',
-  foto5: 'url("../images/main-foto-5.jpg")',
-  foto6: 'url("../images/main-foto-6.jpg")',
-  foto7: 'url("../images/main-foto-7.jpg")'
+  foto1: 'url("./images/main-foto-1.jpg")',
+  foto2: 'url("./images/main-foto-2.jpg")',
+  foto3: 'url("./images/main-foto-3.jpg")',
+  foto4: 'url("./images/main-foto-4.jpg")',
+  foto5: 'url("./images/main-foto-5.jpg")',
+  foto6: 'url("./images/main-foto-6.jpg")',
+  foto7: 'url("./images/main-foto-7.jpg")'
 }
 
 var allElements = $('.fotos__wrapper-foto')
