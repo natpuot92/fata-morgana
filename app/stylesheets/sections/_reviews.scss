@@ -72,10 +72,34 @@
 
 .reviews-prev {
   top: -240px;
-  left: 380px;
+  left: 20vw;
 }
 
 .reviews-next {
   top: -240px;
-  right: 380px;
+  right: 20vw;
+}
+
+@media(max-width: 1682px ) {
+  .reviews-prev {
+  top: -240px;
+  left: 15vw;
+}
+
+.reviews-next {
+  top: -240px;
+  right: 15vw;
+}
+}
+
+@media(max-width: 1440px ) {
+.reviews-prev {
+  top: -240px;
+  left: 1vw;
+}
+
+.reviews-next {
+  top: -240px;
+  right: 1vw;
+}
 }
