@@ -405,8 +405,9 @@ body
         var place = {lat: 47.225190, lng: 39.662033};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 18,
-          center: place
+          center: place,
         });
+
         var imageMarker = 'images/label.png'
         var marker = new google.maps.Marker({
           position: place,
