@@ -1,14 +1,22 @@
 import $ from "jquery"
 import slick from 'slick-carousel'
 
- $('.us-social__slider').slick({
+$('.us-social__slider').slick({
     slidesToShow: 1,
     centerMode: true,
+    asNavFor: '.us-social__container-1',
     appendArrows: $('.us-social__slider-arrows'),
     prevArrow: '<button id="prev" type="button" class="slider-prev us-social-prev"></button>',
     nextArrow: '<button id="prev" type="button" class="slider-next us-social-next"></button>'
 
  });
+
+$('.us-social__container-1').slick({
+  arrows: false,
+  asNavFor: '.us-social__slider',
+
+ });
+
 
 $('.reviews__slider').slick({
     centerMode: true,
@@ -17,6 +25,7 @@ $('.reviews__slider').slick({
     prevArrow: '<button id="prev" type="button" class="slider-prev reviews-prev"></button>',
     nextArrow: '<button id="prev" type="button" class="slider-next reviews-next"></button>'
 });
+
 
 var backgroundUrl = {
   foto1: 'url("./images/big-foto-1.jpg")',
@@ -49,7 +58,6 @@ for (var i = 0; allElements.length > i; i++) {
 
   for (var i = 0; allElements.length > i; i++) {
     var element = 'foto' + (i + 1);
-    console.log(i);
     $(allElements[i]).css('backgroundImage', backgroundUrl[element]);
     $('.fotos').removeClass('fotos-bg');
     $('.fotos').css('backgroundImage', 'none');
@@ -58,3 +66,27 @@ for (var i = 0; allElements.length > i; i++) {
 }
 
 
+$(window).scroll(function() {
+
+  var elementPosition = ($(".how-work").offset().top) - 350;
+  var windowPosition = $(window).scrollTop();
+
+
+  if (elementPosition < windowPosition) {
+    var duration = 500;
+      var elements = $('.how-work__item')
+      elements.each(function(index) {
+        $(this).delay(duration * index).queue(function(){
+        $(this).addClass('fadeInUp').dequeue();
+       })
+    });
+  }
+});
+
+$('.popup__btn-close').click(function() {
+  $('.popup-fotos').addClass('hidden');
+})
+
+$('.page-header__btn-gradient').click(function() {
+  $('.popup-fotos').removeClass('hidden');
+})

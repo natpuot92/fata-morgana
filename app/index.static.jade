@@ -26,90 +26,96 @@ body
           | Контакты
       .page-header__phone
         .page-header__phone-number
-          | +7 863 241-04-40
+          a(href="tel: +78632410440")
+            | +7 863 241-04-40
         a(href="#").btn.page-header__phone-btn
           | Заказать звонок
           a(href="#").page-header__btn-gradient
             | Заказать звонок
-    main.main
-      .services
-        .services__item-block.services__video
-          .services__item-block-1.services__video-1
-            span.services__item-block-1-text.services__video-title
-              | видеосъемка
-          .services__item-block-2.services__video-2
-            .services__item-block-2-dark.services__video-2-dark
-              .services__item-block-2-dark-frame.services__video-2-dark-frame
-                .services__item-block-2-dark-frame-text.services__video-2-dark-frame-text
-                  | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
-                .services__btn-wrapper
-                  a(href="#").btn.btn-services
-                    | Подробнее
-                  a(href="#").btn-services-gradient
-                    | Подробнее
-                  span.btn-services-arrow
-        .services__item-block.services__foto
-          .services__item-block-1.services__foto-1
-            span.services__item-block-1-text.services__foto-title
-              | фотография
-          .services__item-block-2.services__foto-2
-            .services__item-block-2-dark.services__foto-2-dark
-              .services__item-block-2-dark-frame.services__foto-2-dark-frame
-                .services__item-block-2-dark-frame-text.services__foto-2-dark-frame-text
-                  | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
-                .services__btn-wrapper
-                  a(href="#").btn.btn-services.btn-services
-                    | Подробнее
-                  a(href="#").btn-services-gradient
-                    | Подробнее
-                  span.btn-services-arrow
-        .services__item-block.services__organisation
-          .services__item-block-1.services__organisation-1
-            span.services__item-block-1-text.services__organisation-title
-              | организация мереприятий
-          .services__item-block-2.services__organisation-2
-            .services__item-block-2-dark.services__organisation-2-dark
-              .services__item-block-2-dark-frame.services__organisation-2-dark-frame
-                .services__item-block-2-dark-frame-text.services__organisation-2-dark-frame-text
-                  | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
-                .services__btn-wrapper
-                  a(href="#").btn.btn-services
-                    | Подробнее
-                  a(href="#").btn-services-gradient
-                    | Подробнее
-                  span.btn-services-arrow
-        .services__item-block.services__air
-          .services__item-block-1.services__air-1
-            span.services__item-block-1-text.services__air-title
-              | видеосъемка
-          .services__item-block-2.services__air-2
-            .services__item-block-2-dark.services__air-2-dark
-              .services__item-block-2-dark-frame.services__air-2-dark-frame
-                .services__item-block-2-dark-frame-text.services__air-2-dark-frame-text
-                  | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
-                .services__btn-wrapper
-                  a(href="#").btn.btn-services
-                    | Подробнее
-                  a(href="#").btn-services-gradient
-                    | Подробнее
-                  span.btn-services-arrow
-      .us
-        .container.us-container
-          .us__foto
-            img(src="images/us.png").us__foto-img
-          .us__text
-            .us__text-title
-              | Давайте знакомиться!
-            .us__text-desc
-              div
-                | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст..
-              div
-                | Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.
-              div
-                | За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
-      .us-social
-        .container.us-social__container
-          .us-social__container-1
+  main.main
+    .services
+      .services__item-block.services__video
+        .services__item-block-1.services__video-1
+          span.services__item-block-1-text.services__video-title
+            | видеосъемка
+        .services__item-block-2.services__video-2
+          .services__item-block-2-dark.services__video-2-dark
+            .services__item-block-2-dark-frame.services__video-2-dark-frame
+        .services__item-absolute
+          .services__item-block-2-dark-frame-text.services__video-2-dark-frame-text
+            | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+          .services__btn-wrapper
+            a(href="#").btn.btn-services
+              | Подробнее
+            a(href="#").btn-services-gradient
+              | Подробнее
+            span.btn-services-arrow
+      .services__item-block.services__foto
+        .services__item-block-1.services__foto-1
+          span.services__item-block-1-text.services__foto-title
+            | фотография
+        .services__item-block-2.services__foto-2
+          .services__item-block-2-dark.services__foto-2-dark
+            .services__item-block-2-dark-frame.services__foto-2-dark-frame
+        .services__item-absolute
+         .services__item-block-2-dark-frame-text.services__foto-2-dark-frame-text
+           | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+         .services__btn-wrapper
+           a(href="#").btn.btn-services.btn-services
+             | Подробнее
+           a(href="#").btn-services-gradient
+             | Подробнее
+           span.btn-services-arrow
+      .services__item-block.services__organisation
+        .services__item-block-1.services__organisation-1
+          span.services__item-block-1-text.services__organisation-title
+            | организация мереприятий
+        .services__item-block-2.services__organisation-2
+          .services__item-block-2-dark.services__organisation-2-dark
+            .services__item-block-2-dark-frame.services__organisation-2-dark-frame
+        .services__item-absolute
+          .services__item-block-2-dark-frame-text.services__organisation-2-dark-frame-text
+            | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+          .services__btn-wrapper
+            a(href="#").btn.btn-services
+              | Подробнее
+            a(href="#").btn-services-gradient
+              | Подробнее
+            span.btn-services-arrow
+      .services__item-block.services__air
+        .services__item-block-1.services__air-1
+          span.services__item-block-1-text.services__air-title
+            | видеосъемка
+        .services__item-block-2.services__air-2
+          .services__item-block-2-dark.services__air-2-dark
+            .services__item-block-2-dark-frame.services__air-2-dark-frame
+        .services__item-absolute
+          .services__item-block-2-dark-frame-text.services__air-2-dark-frame-text
+            | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+          .services__btn-wrapper
+            a(href="#").btn.btn-services
+              | Подробнее
+            a(href="#").btn-services-gradient
+              | Подробнее
+            span.btn-services-arrow
+    .us
+      .container.us-container
+        .us__foto
+          img(src="images/us.png").us__foto-img
+        .us__text
+          .us__text-title
+            | Давайте знакомиться!
+          .us__text-desc
+            div
+              | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст..
+            div
+              | Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.
+            div
+              | За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
+    .us-social
+      .container.us-social__container
+        .us-social__container-1
+          .us-social-cont-1__slide.us-social-cont-1__slide-2
             .us-social__container-1-title
               | мы в социальных сетях
             .us-social__container-1-text
@@ -121,279 +127,342 @@ body
                 | Вступить в группу вконтакте
               a(href="#").us-social__btn-gradient
                 | Вступить в группу вконтакте
-          .us-social__container-2
-            .us-social__slider
-              .us-social__slid.us-social__slid-1
-                img(src="images/phone.png")
-              .us-social__slid.us-social__slid-2
-                img(src="images/phone.png")
-              .us-social__slid.us-social__slid-3
-                img(src="images/phone.png")
-            .us-social__slider-arrows
-      .fotos
-        .fotos__wrapper.fotos__wrapper-1
-          .fotos__wrapper-foto.fotos__wrapper-1-foto-1(data-foto = "foto1")
-            .fotos__item-dark.fotos__item-dark-1
-              .fotos__item-dark-frame.fotos__item-dark-frame-1
-                .fotos__item-dark-frame-text.fotos__item-dark-frame-text-1
-                  | Светлана и Алексей
-                .fotos__item-dark-frame-text.fotos__item-dark-frame-text-2
-                  | Свадебная фотосессия
-                .services__btn-wrapper
-                  a(href="#").btn.btn-services.btn-services-fix
-                    | Подробнее
-                  a(href="#").btn-services-gradient.btn-fotos-gradient
-                    | Подробнее
-                  span.btn-services-arrow
-          .fotos__wrapper-foto.fotos__wrapper-1-foto-2(data-foto = "foto2")
-            .fotos__item-dark.fotos__item-dark-1
-              .fotos__item-dark-frame.fotos__item-dark-frame-1
-                .fotos__item-dark-frame-text.fotos__item-dark-frame-text-1
-                  | Светлана и Алексей
-                .fotos__item-dark-frame-text.fotos__item-dark-frame-text-2
-                  | Свадебная фотосессия
-                .services__btn-wrapper
-                  a(href="#").btn.btn-services.btn-services-fix
-                    | Подробнее
-                  a(href="#").btn-services-gradient.btn-fotos-gradient
-                    | Подробнее
-                  span.btn-services-arrow
-        .fotos__wrapper.fotos__wrapper-2
-          .fotos__wrapper-foto.fotos__wrapper-2-foto-1(data-foto = "foto3")
-            .fotos__item-dark.fotos__item-dark-1
-              .fotos__item-dark-frame.fotos__item-dark-frame-1
-                .fotos__item-dark-frame-text.fotos__item-dark-frame-text-1
-                  | Светлана и Алексей
-                .fotos__item-dark-frame-text.fotos__item-dark-frame-text-2
-                  | Свадебная фотосессия
-                .services__btn-wrapper
-                  a(href="#").btn.btn-services.btn-services-fix
-                    | Подробнее
-                  a(href="#").btn-services-gradient.btn-fotos-gradient
-                    | Подробнее
-                  span.btn-services-arrow
-          .fotos__wrapper-foto.fotos__wrapper-2-foto-2(data-foto = "foto4")
-            .fotos__item-dark.fotos__item-dark-1
-              .fotos__item-dark-frame.fotos__item-dark-frame-1
-                .fotos__item-dark-frame-text.fotos__item-dark-frame-text-1
-                  | Светлана и Алексей
-                .fotos__item-dark-frame-text.fotos__item-dark-frame-text-2
-                  | Свадебная фотосессия
-                .services__btn-wrapper
-                  a(href="#").btn.btn-services.btn-services-fix
-                    | Подробнее
-                  a(href="#").btn-services-gradient.btn-fotos-gradient
-                    | Подробнее
-                  span.btn-services-arrow
-        .fotos__wrapper.fotos__wrapper-3
-          .fotos__wrapper-foto.fotos__wrapper-3-foto-1(data-foto = "foto5")
-            .fotos__item-dark.fotos__item-dark-1
-              .fotos__item-dark-frame.fotos__item-dark-frame-1
-                .fotos__item-dark-frame-text.fotos__item-dark-frame-text-1
-                  | Светлана и Алексей
-                .fotos__item-dark-frame-text.fotos__item-dark-frame-text-2
-                  | Свадебная фотосессия
-                .services__btn-wrapper
-                  a(href="#").btn.btn-services.btn-services-fix
-                    | Подробнее
-                  a(href="#").btn-services-gradient.btn-fotos-gradient
-                    | Подробнее
-                  span.btn-services-arrow
-          .fotos__wrapper-foto.fotos__wrapper-3-foto-2(data-foto = "foto6")
-            .fotos__item-dark.fotos__item-dark-1
-              .fotos__item-dark-frame.fotos__item-dark-frame-1
-                .fotos__item-dark-frame-text.fotos__item-dark-frame-text-1
-                  | Светлана и Алексей
-                .fotos__item-dark-frame-text.fotos__item-dark-frame-text-2
-                  | Свадебная фотосессия
-                .services__btn-wrapper
-                  a(href="#").btn.btn-services.btn-services-fix
-                    | Подробнее
-                  a(href="#").btn-services-gradient.btn-fotos-gradient
-                    | Подробнее
-                  span.btn-services-arrow
-          .fotos__wrapper-foto.fotos__wrapper-3-foto-3(data-foto = "foto7")
-            .fotos__item-dark.fotos__item-dark-1
-              .fotos__item-dark-frame.fotos__item-dark-frame-1
-                .fotos__item-dark-frame-text.fotos__item-dark-frame-text-1
-                  | Светлана и Алексей
-                .fotos__item-dark-frame-text.fotos__item-dark-frame-text-2
-                  | Свадебная фотосессия
-                .services__btn-wrapper
-                  a(href="#").btn.btn-services.btn-services-fix
-                    | Подробнее
-                  a(href="#").btn-services-gradient.btn-fotos-gradient
-                    | Подробнее
-                  span.btn-services-arrow
-      .how-work
-        .container.how-work__container
-          .how-work__title
-            | Схема нашей работы
-          .how-work__items
-            .how-work__item
-              .how-work__icon.how-work__icon-1
-              .how-work__text-bold
-                | Знакомство
+          .us-social-cont-1__slide.us-social-cont-1__slide-2
+            .us-social__container-1-title
+              | мы в социальных сетях
+            .us-social__container-1-text
+              | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+            .us-social__container-1-text
+              | Lorem Ipsum используют потому, что тот обеспечивает
+            .btn-wrapper__us-social
+              a(href="#").btn.us-social-btn
+                | Вступить в группу вконтакте
+              a(href="#").us-social__btn-gradient
+                | Вступить в группу вконтакте
+          .us-social-cont-1__slide.us-social-cont-1__slide-2
+            .us-social__container-1-title
+              | мы в социальных сетях
+            .us-social__container-1-text
+              | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+            .us-social__container-1-text
+              | Lorem Ipsum используют потому, что тот обеспечивает
+            .btn-wrapper__us-social
+              a(href="#").btn.us-social-btn
+                | Вступить в группу вконтакте
+              a(href="#").us-social__btn-gradient
+                | Вступить в группу вконтакте
+        .us-social__container-2
+          .us-social__slider
+            .us-social__slid.us-social__slid-1
+              img(src="images/phone.png")
+            .us-social__slid.us-social__slid-2
+              img(src="images/phone.png")
+            .us-social__slid.us-social__slid-3
+              img(src="images/phone.png")
+          .us-social__slider-arrows
+    .fotos
+      .fotos__wrapper.fotos__wrapper-1
+        .fotos__wrapper-foto.fotos__wrapper-1-foto-1(data-foto = "foto1")
+          .fotos__item-dark.fotos__item-dark-1
+            .fotos__item-dark-frame.fotos__item-dark-frame-1
+              .fotos__item-dark-frame-text.fotos__item-dark-frame-text-1
+                | Светлана и Алексей
+              .fotos__item-dark-frame-text.fotos__item-dark-frame-text-2
+                | Свадебная фотосессия
+              .services__btn-wrapper
+                a(href="#").btn.btn-services.btn-services-fix
+                  | Подробнее
+                a(href="#").btn-services-gradient.btn-fotos-gradient
+                  | Подробнее
+                span.btn-services-arrow
+        .fotos__wrapper-foto.fotos__wrapper-1-foto-2(data-foto = "foto2")
+          .fotos__item-dark.fotos__item-dark-1
+            .fotos__item-dark-frame.fotos__item-dark-frame-1
+              .fotos__item-dark-frame-text.fotos__item-dark-frame-text-1
+                | Светлана и Алексей
+              .fotos__item-dark-frame-text.fotos__item-dark-frame-text-2
+                | Свадебная фотосессия
+              .services__btn-wrapper
+                a(href="#").btn.btn-services.btn-services-fix
+                  | Подробнее
+                a(href="#").btn-services-gradient.btn-fotos-gradient
+                  | Подробнее
+                span.btn-services-arrow
+      .fotos__wrapper.fotos__wrapper-2
+        .fotos__wrapper-foto.fotos__wrapper-2-foto-1(data-foto = "foto3")
+          .fotos__item-dark.fotos__item-dark-1
+            .fotos__item-dark-frame.fotos__item-dark-frame-1
+              .fotos__item-dark-frame-text.fotos__item-dark-frame-text-1
+                | Светлана и Алексей
+              .fotos__item-dark-frame-text.fotos__item-dark-frame-text-2
+                | Свадебная фотосессия
+              .services__btn-wrapper
+                a(href="#").btn.btn-services.btn-services-fix
+                  | Подробнее
+                a(href="#").btn-services-gradient.btn-fotos-gradient
+                  | Подробнее
+                span.btn-services-arrow
+        .fotos__wrapper-foto.fotos__wrapper-2-foto-2(data-foto = "foto4")
+          .fotos__item-dark.fotos__item-dark-1
+            .fotos__item-dark-frame.fotos__item-dark-frame-1
+              .fotos__item-dark-frame-text.fotos__item-dark-frame-text-1
+                | Светлана и Алексей
+              .fotos__item-dark-frame-text.fotos__item-dark-frame-text-2
+                | Свадебная фотосессия
+              .services__btn-wrapper
+                a(href="#").btn.btn-services.btn-services-fix
+                  | Подробнее
+                a(href="#").btn-services-gradient.btn-fotos-gradient
+                  | Подробнее
+                span.btn-services-arrow
+      .fotos__wrapper.fotos__wrapper-3
+        .fotos__wrapper-foto.fotos__wrapper-3-foto-1(data-foto = "foto5")
+          .fotos__item-dark.fotos__item-dark-1
+            .fotos__item-dark-frame.fotos__item-dark-frame-1
+              .fotos__item-dark-frame-text.fotos__item-dark-frame-text-1
+                | Светлана и Алексей
+              .fotos__item-dark-frame-text.fotos__item-dark-frame-text-2
+                | Свадебная фотосессия
+              .services__btn-wrapper
+                a(href="#").btn.btn-services.btn-services-fix
+                  | Подробнее
+                a(href="#").btn-services-gradient.btn-fotos-gradient
+                  | Подробнее
+                span.btn-services-arrow
+        .fotos__wrapper-foto.fotos__wrapper-3-foto-2(data-foto = "foto6")
+          .fotos__item-dark.fotos__item-dark-1
+            .fotos__item-dark-frame.fotos__item-dark-frame-1
+              .fotos__item-dark-frame-text.fotos__item-dark-frame-text-1
+                | Светлана и Алексей
+              .fotos__item-dark-frame-text.fotos__item-dark-frame-text-2
+                | Свадебная фотосессия
+              .services__btn-wrapper
+                a(href="#").btn.btn-services.btn-services-fix
+                  | Подробнее
+                a(href="#").btn-services-gradient.btn-fotos-gradient
+                  | Подробнее
+                span.btn-services-arrow
+        .fotos__wrapper-foto.fotos__wrapper-3-foto-3(data-foto = "foto7")
+          .fotos__item-dark.fotos__item-dark-1
+            .fotos__item-dark-frame.fotos__item-dark-frame-1
+              .fotos__item-dark-frame-text.fotos__item-dark-frame-text-1
+                | Светлана и Алексей
+              .fotos__item-dark-frame-text.fotos__item-dark-frame-text-2
+                | Свадебная фотосессия
+              .services__btn-wrapper
+                a(href="#").btn.btn-services.btn-services-fix
+                  | Подробнее
+                a(href="#").btn-services-gradient.btn-fotos-gradient
+                  | Подробнее
+                span.btn-services-arrow
+    .how-work
+      .container.how-work__container
+        .how-work__title
+          | Схема нашей работы
+        .how-work__items
+          .how-work__item.animated
+            .how-work__icon.how-work__icon-1
+            .how-work__text-bold
+              | Знакомство
+              br
+              | и обсуждение деталей
+            .how-work__text-light
+              | Давно выяснено, что при оценке дизайна и композиции читаемый екст мешает
+          .how-work__item.animated
+            .how-work__icon.how-work__icon-2
+            .how-work__text-bold
+              | Составление сметы
+              br
+              | и плана работы
+            .how-work__text-light
+              | Давно выяснено, что при оценке дизайна и композиции читаемый екст мешает
+          .how-work__item.animated
+            .how-work__icon.how-work__icon-3
+            .how-work__text-bold
+              | Подписание договора
+              br
+              | и внесение предоплаты
+            .how-work__text-light
+              | Давно выяснено, что при оценке дизайна и композиции читаемый екст мешает
+          .how-work__item.animated
+            .how-work__icon.how-work__icon-4
+            .how-work__text-bold
+              | Работа
+              br
+              | над проектом
+            .how-work__text-light
+              | Давно выяснено, что при оценке дизайна и композиции читаемый екст мешает
+          .how-work__item.animated
+            .how-work__icon.how-work__icon-5
+            .how-work__text-bold
+              | Довольный клиент
+            .how-work__text-light
+              | Давно выяснено, что при оценке дизайна и композиции читаемый екст мешает сосредоточиться
+    .reviews
+      .reviews__title
+        | отзывы  клиентов
+      .reviews__slider
+        .reviews__slider-container
+          .reviews__slid.reviews__slid-1
+            .reviews__slide-foto.reviews__slide-foto-1
+            .reviews__slide-text-wrapper
+              .reviews__slide-title
+                | Светлана и Алексей
+              .reviews__slide-text
+                | Наша компания существует с 2007 года. Чем же мы лучше других? В то время, пока остальные следуют трендам, мы их создавали и продолжаем создавать! Говорят, все начинается с идеи. В недалеком прошлом два человека заболев ей, нашли массу единомышленников. Создав команду, сильную, молодую, творческую и всегда готовую к любым экспериментам
+        .reviews__slider-container
+          .reviews__slid.reviews__slid-2
+            .reviews__slide-foto.reviews__slide-foto-2
+            .reviews__slide-text-wrapper
+              .reviews__slide-title
+                | Светлана и Алексей
+              .reviews__slide-text
+                | Наша компания существует с 2007 года. Чем же мы лучше других? В то время, пока остальные следуют трендам, мы их создавали и продолжаем создавать! Говорят, все начинается с идеи. В недалеком прошлом два человека заболев ей, нашли массу единомышленников. Создав команду, сильную, молодую, творческую и всегда готовую к любым экспериментам
+        .reviews__slider-container
+          .reviews__slid.reviews__slid-3
+            .reviews__slide-foto.reviews__slide-foto-3
+            .reviews__slide-text-wrapper
+              .reviews__slide-title
+                | Светлана и Алексей
+              .reviews__slide-text
+                | Наша компания существует с 2007 года. Чем же мы лучше других? В то время, пока остальные следуют трендам, мы их создавали и продолжаем создавать! Говорят, все начинается с идеи. В недалеком прошлом два человека заболев ей, нашли массу единомышленников. Создав команду, сильную, молодую, творческую и всегда готовую к любым экспериментам
+        .reviews__slider-container
+          .reviews__slid.reviews__slid-4
+            .reviews__slide-foto.reviews__slide-foto-4
+            .reviews__slide-text-wrapper
+              .reviews__slide-title
+                | Светлана и Алексей
+              .reviews__slide-text
+                | Наша компания существует с 2007 года. Чем же мы лучше других? В то время, пока остальные следуют трендам, мы их создавали и продолжаем создавать! Говорят, все начинается с идеи. В недалеком прошлом два человека заболев ей, нашли массу единомышленников. Создав команду, сильную, молодую, творческую и всегда готовую к любым экспериментам
+      .reviews__slider-arrow
+    .contacts
+      .contacts-wrapper
+        .contacts__text
+          .contacts__title
+            | контакты
+          .contacts__item-wrapper
+            .contacts__item.contacts__address
+              .contacts__item-bold
+                | Адрес:
+              .contacts__item-light
+                | 344001, г. Ростов-на-Дону
                 br
-                | и обсуждение деталей
-              .how-work__text-light
-                | Давно выяснено, что при оценке дизайна и композиции читаемый екст мешает
-            .how-work__item
-              .how-work__icon.how-work__icon-2
-              .how-work__text-bold
-                | Составление сметы
+                | ул. Писательская 65/5 (р-н Текучёвского моста)
+            .contacts__item.contacts__work
+              .contacts__item-bold
+                | Режим работы:
+              .contacts__item-light
+                | Пн-Пт с 09.00-18.00
                 br
-                | и плана работы
-              .how-work__text-light
-                | Давно выяснено, что при оценке дизайна и композиции читаемый екст мешает
-            .how-work__item
-              .how-work__icon.how-work__icon-3
-              .how-work__text-bold
-                | Подписание договора
-                br
-                | и внесение предоплаты
-              .how-work__text-light
-                | Давно выяснено, что при оценке дизайна и композиции читаемый екст мешает
-            .how-work__item
-              .how-work__icon.how-work__icon-4
-              .how-work__text-bold
-                | Работа
-                br
-                | над проектом
-              .how-work__text-light
-                | Давно выяснено, что при оценке дизайна и композиции читаемый екст мешает
-            .how-work__item
-              .how-work__icon.how-work__icon-5
-              .how-work__text-bold
-                | Довольный клиент
-              .how-work__text-light
-                | Давно выяснено, что при оценке дизайна и композиции читаемый екст мешает сосредоточиться
-      .reviews
-        .reviews__title
-          | отзывы  клиентов
-        .reviews__slider
-          .reviews__slider-container
-            .reviews__slid.reviews__slid-1
-              .reviews__slide-foto.reviews__slide-foto-1
-              .reviews__slide-text-wrapper
-                .reviews__slide-title
-                  | Светлана и Алексей
-                .reviews__slide-text
-                  | Наша компания существует с 2007 года. Чем же мы лучше других? В то время, пока остальные следуют трендам, мы их создавали и продолжаем создавать! Говорят, все начинается с идеи. В недалеком прошлом два человека заболев ей, нашли массу единомышленников. Создав команду, сильную, молодую, творческую и всегда готовую к любым экспериментам
-          .reviews__slider-container
-            .reviews__slid.reviews__slid-2
-              .reviews__slide-foto.reviews__slide-foto-2
-              .reviews__slide-text-wrapper
-                .reviews__slide-title
-                  | Светлана и Алексей
-                .reviews__slide-text
-                  | Наша компания существует с 2007 года. Чем же мы лучше других? В то время, пока остальные следуют трендам, мы их создавали и продолжаем создавать! Говорят, все начинается с идеи. В недалеком прошлом два человека заболев ей, нашли массу единомышленников. Создав команду, сильную, молодую, творческую и всегда готовую к любым экспериментам
-          .reviews__slider-container
-            .reviews__slid.reviews__slid-3
-              .reviews__slide-foto.reviews__slide-foto-3
-              .reviews__slide-text-wrapper
-                .reviews__slide-title
-                  | Светлана и Алексей
-                .reviews__slide-text
-                  | Наша компания существует с 2007 года. Чем же мы лучше других? В то время, пока остальные следуют трендам, мы их создавали и продолжаем создавать! Говорят, все начинается с идеи. В недалеком прошлом два человека заболев ей, нашли массу единомышленников. Создав команду, сильную, молодую, творческую и всегда готовую к любым экспериментам
-          .reviews__slider-container
-            .reviews__slid.reviews__slid-4
-              .reviews__slide-foto.reviews__slide-foto-4
-              .reviews__slide-text-wrapper
-                .reviews__slide-title
-                  | Светлана и Алексей
-                .reviews__slide-text
-                  | Наша компания существует с 2007 года. Чем же мы лучше других? В то время, пока остальные следуют трендам, мы их создавали и продолжаем создавать! Говорят, все начинается с идеи. В недалеком прошлом два человека заболев ей, нашли массу единомышленников. Создав команду, сильную, молодую, творческую и всегда готовую к любым экспериментам
-        .reviews__slider-arrow
-      .contacts
-        .contacts-wrapper
-          .contacts__text
-            .contacts__title
-              | контакты
-            .contacts__item-wrapper
-              .contacts__item.contacts__address
-                .contacts__item-bold
-                  | Адрес:
-                .contacts__item-light
-                  | 344001, г. Ростов-на-Дону
-                  br
-                  | ул. Писательская 65/5 (р-н Текучёвского моста)
-              .contacts__item.contacts__work
-                .contacts__item-bold
-                  | Режим работы:
-                .contacts__item-light
-                  | Пн-Пт с 09.00-18.00
-                  br
-                  | Сб, Вс - выходной
-              .contacts__item.contacts__email
-                .contacts__item-bold
-                  | E-mail:
-                .contacts__item-light
+                | Сб, Вс - выходной
+            .contacts__item.contacts__email
+              .contacts__item-bold
+                | E-mail:
+              .contacts__item-light
+                a(href="mailto: info@olvya.ru")
                   | info@olvya.ru
-              .contacts__item.contacts__phone
-                .contacts__item-bold
-                  | Телефон:
-                .contacts__item-light
-                  | (863) 236-35-05
-        .contacts__map#map
-      footer.page-footer
-        .container.footer-container
-          .page-footer__top-wrapper
-            .page-footer__top-wrapper-1
-              .page-footer__items.page-footer__items-1
-                a(href="#").page-footer__item
-                  | О нас
-                a(href="#").page-footer__item
-                  | Услуги
-                a(href="#").page-footer__item
-                  | Портфолио
-                a(href="#").page-footer__item
-                  | Отзывы
-                a(href="#").page-footer__item
-                  | Блог
-                a(href="#").page-footer__item
-                  | Контакты
-              .page-footer__items.page-footer__items-2
-                a(href="#").page-footer__item
-                  | Свадебное фото
-                a(href="#").page-footer__item
-                  | Свадебные фильмы
-                a(href="#").page-footer__item
-                  | SDE
-                a(href="#").page-footer__item
-                  | Love Story
-              .page-footer__items.page-footer__items-3
-                a(href="#").page-footer__item
-                  | Аэросъемка
-                a(href="#").page-footer__item
-                  | Корпоративные фильмы
-                a(href="#").page-footer__item
-                  | Семейные фильмы
-                a(href="#").page-footer__item
-                  | Организация мероприятия
-              .page-footer__contacts
-                .page-footer__tel
+            .contacts__item.contacts__phone
+              .contacts__item-bold
+                | Телефон:
+              .contacts__item-light
+                | (863) 236-35-05
+      .contacts__map#map
+    footer.page-footer
+      .container.footer-container
+        .page-footer__top-wrapper
+          .page-footer__top-wrapper-1
+            .page-footer__items.page-footer__items-1
+              a(href="#").page-footer__item
+                | О нас
+              a(href="#").page-footer__item
+                | Услуги
+              a(href="#").page-footer__item
+                | Портфолио
+              a(href="#").page-footer__item
+                | Отзывы
+              a(href="#").page-footer__item
+                | Блог
+              a(href="#").page-footer__item
+                | Контакты
+            .page-footer__items.page-footer__items-2
+              a(href="#").page-footer__item
+                | Свадебное фото
+              a(href="#").page-footer__item
+                | Свадебные фильмы
+              a(href="#").page-footer__item
+                | SDE
+              a(href="#").page-footer__item
+                | Love Story
+            .page-footer__items.page-footer__items-3
+              a(href="#").page-footer__item
+                | Аэросъемка
+              a(href="#").page-footer__item
+                | Корпоративные фильмы
+              a(href="#").page-footer__item
+                | Семейные фильмы
+              a(href="#").page-footer__item
+                | Организация мероприятия
+            .page-footer__contacts
+              .page-footer__tel
+                a(href="tel: +78632410440")
                   | +7 863 241-04-40
-                .page-footer__btn-wrapper
-                  a(href="#").btn.page-footer-btn
-                    | Заказать звонок
-                  a(href="#").page-footer-btn__gradient
-                    | Заказать звонок
-                .page-footer__social-links
-                  a(href="#").page-footer__social-link.page-footer__social-link-1
-                  a(href="#").page-footer__social-link.page-footer__social-link-2
-                  a(href="#").page-footer__social-link.page-footer__social-link-3
-                  a(href="#").page-footer__social-link.page-footer__social-link-4
-                  a(href="#").page-footer__social-link.page-footer__social-link-5
-                  a(href="#").page-footer__social-link.page-footer__social-link-6
-
-          .page-footer__bottom-wrapper
-            .page-footer__copyright
-              | © Fatamorgana 2017
-            .page-footer__person
+              .page-footer__btn-wrapper
+                a(href="#").btn.page-footer-btn
+                  | Заказать звонок
+                a(href="#").page-footer-btn__gradient
+                  | Заказать звонок
+              .page-footer__social-links
+                a(href="#").page-footer__social-link.page-footer__social-link-1
+                a(href="#").page-footer__social-link.page-footer__social-link-2
+                a(href="#").page-footer__social-link.page-footer__social-link-3
+                a(href="#").page-footer__social-link.page-footer__social-link-4
+                a(href="#").page-footer__social-link.page-footer__social-link-5
+                a(href="#").page-footer__social-link.page-footer__social-link-6
+        .page-footer__bottom-wrapper
+          .page-footer__copyright
+            | © Fatamorgana 2017
+          .page-footer__person
+            a(href="#")
               | Обработка персональных данных
-            .page-footer__chilli
+          .page-footer__chilli
+            a(href="#")
               | Chillicode
+  .popup-fotos.hidden
+    .overlay
+      .popup__container.popup-fotos_container
+        .popup__btn-close.popup-btn__close
+        .popup__title.popup-fotos__title
+          | Закажите фотосъемку
+        .popup-fotos__desc
+          | Оставьте Ваши данные или напишите интересующий вас вопрос и в течении 10 минут мы свяжемся с Вами
+        form(action="#" method="#").popup-fotos__form#popup-fotos__form
+          .popup-fotos__form-container
+            input(type="text" name="fotos__name" placeholder="Имя").popup__fotos-form-input
+            input(type="tel" name="fotos__tel" placeholder="Телефон").popup__fotos-form-input
+            input(type="email" name="fotos__email" placeholder="Почта").popup__fotos-form-input
+          textarea(name="fotos__area" placeholder= "Ваше сообщение").popup__form-textarea
+          label.checkbox-wrapper
+            .checkbox-wrapper__checkbox
+              input(type="checkbox" id = "popup__ask__checkbox" name = "popup__ask__checkbox" checked).section1__form-checkbox
+              .checkbox.popup__checkbox
+                span.checkbox__circle
+                span.checkbox__yes
+                  | да
+                span.checkbox__no
+                  | нет
+            .checkbox-wrapper__text.checkbox-wrapper__text-popup
+              .checkbox-wrapper__text-1
+                | Даю согласие на
+                =' '
+                a(href="#")
+                  | Обработку персональных данных
+              .checkbox-wrapper__text-2
+                | *Ваши данные не будут переданы третьим лицам
+          .popup__btn-wrapper
+            button(type="submit" href="#").btn.popup__btn-1
+              | Отправить
+            button(type="submit" href="#").btn.popup__btn-2-gradient
+              | Отправить
   script(src="javascripts/vendor.js")
   script(src="javascripts/app.js")
 
@@ -606,7 +675,7 @@ body
         });
       }
 
-script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1NoA2BqGki3O7b9SUJVhCCLU-1uCFKKs&callback=initMap")
+  script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1NoA2BqGki3O7b9SUJVhCCLU-1uCFKKs&callback=initMap")
 
 
 

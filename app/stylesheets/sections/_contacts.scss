@@ -93,36 +93,7 @@
   line-height: 1.71;
 }
 
-@media (max-width: 990px) {
-  .contacts {
-    display: flex;
+.contacts__item-light a {
+  color: black;
 }
 
-  .contacts-wrapper {
-    max-width: 30%;
-    width: 100%;
-    margin-left: auto;
-    padding-right: 0;
-    padding-left: 10px;
-
-  }
-}
-
-@media (max-width: 630px) {
-  .contacts {
-    flex-direction: column;
-  }
-  .contacts-wrapper {
-    max-width: 100%;
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .contacts__map {
-    height: 500px;
-  }
-
-  .contacts__text {
-    margin-left: 70px;
-  }
-}

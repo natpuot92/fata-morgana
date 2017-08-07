@@ -144,13 +144,3 @@
 .btn-fotos-gradient {
   padding-top: 10px;
 }
-
-@media (max-width: 700px) {
-  .fotos {
-    background-size: cover;
-  }
-
-  .fotos__item-dark {
-    display: none;
-  }
-}
