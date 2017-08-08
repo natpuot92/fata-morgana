@@ -443,7 +443,7 @@ body
           textarea(name="fotos__area" placeholder= "Ваше сообщение").popup__form-textarea
           label.checkbox-wrapper
             .checkbox-wrapper__checkbox
-              input(type="checkbox" id = "popup__ask__checkbox" name = "popup__ask__checkbox" checked).section1__form-checkbox
+              input(type="checkbox" id = "popup-fotos__checkbox" name = "popup-fotos__checkbox" checked).section1__form-checkbox
               .checkbox.popup__checkbox
                 span.checkbox__circle
                 span.checkbox__yes
@@ -468,6 +468,8 @@ body
 
   script.
     require('initialize');
+
+  script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1NoA2BqGki3O7b9SUJVhCCLU-1uCFKKs&callback=initMap")
 
   script.
     function initMap() {
@@ -675,7 +677,7 @@ body
         });
       }
 
-  script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1NoA2BqGki3O7b9SUJVhCCLU-1uCFKKs&callback=initMap")
+
 
 
 

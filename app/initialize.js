@@ -1,6 +1,8 @@
 import $ from "jquery"
 import slick from 'slick-carousel'
 
+$(document).ready(function($) {
+
 $('.us-social__slider').slick({
     slidesToShow: 1,
     centerMode: true,
@@ -90,3 +92,25 @@ $('.popup__btn-close').click(function() {
 $('.page-header__btn-gradient').click(function() {
   $('.popup-fotos').removeClass('hidden');
 })
+
+var checkBox1 = $('.popup-fotos__checkbox');
+checkBox1.change(function() {
+  if(checkBox1.prop('checked')) {
+    $('.checkbox__circle').animate({"left": "23px"}, "fast", function() {
+      $('.checkbox__yes').css("display", "block");
+      $('.checkbox__no').css("display", "none");
+      $('.popup__btn-1').prop('disabled', false);
+      $('.popup__btn-2-gradient').prop('disabled', false);
+    });
+  } else {
+    $('.checkbox__circle').animate({"left": "0"}, "fast", function() {
+      $('.checkbox__yes').css("display", "none");
+      $('.checkbox__no').css("display", "block");
+      $('.popup__btn-1').prop('disabled', true);
+      $('.popup__btn-2-gradient').prop('disabled', true);
+    });
+    };
+});
+
+})
+
