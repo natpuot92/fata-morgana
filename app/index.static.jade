@@ -35,6 +35,10 @@ body
   main.main
     .services
       .services__item-block.services__video
+        video(poster="images/video.jpg" loop muted).video-services
+          source(src = "images/video.webm" type = "video/webm")
+          source(src="images/video.ogv" type="video/ogg")
+          source(src="images/video.mp4" type="video/mp4")
         .services__item-block-1.services__video-1
           span.services__item-block-1-text.services__video-title
             | видеосъемка
@@ -85,7 +89,7 @@ body
       .services__item-block.services__air
         .services__item-block-1.services__air-1
           span.services__item-block-1-text.services__air-title
-            | видеосъемка
+            | аэросъемка
         .services__item-block-2.services__air-2
           .services__item-block-2-dark.services__air-2-dark
             .services__item-block-2-dark-frame.services__air-2-dark-frame

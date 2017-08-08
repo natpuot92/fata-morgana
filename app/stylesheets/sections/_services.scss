@@ -1,6 +1,7 @@
 .services {
   display: flex;
   flex-direction: row;
+  position: relative;
   justify-content: space-between;
   padding-top: 56px;
 
@@ -9,6 +10,7 @@
 
 .services__item-block {
   position: relative;
+  overflow: hidden;
   width: 25%;
   margin-right: 0.2%;
 }
@@ -19,9 +21,19 @@
 
 .services__video {
   display: block;
-  background: url('../images/video.jpg') top;
-  background-size: cover;
+  background-size: 120%;
+}
 
+.video-services {
+  position: absolute;
+  top: -56px;
+  left: 0;
+  padding-top: 56px;
+  width: auto;
+  height: 100vh;
+  //object-fit: fill;
+
+  background-color: black;
 }
 
 .services__foto {

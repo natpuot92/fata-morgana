@@ -112,5 +112,18 @@ checkBox1.change(function() {
     };
 });
 
+
 })
+
+
+$('.services__video').mouseover(function() {
+  console.log('sadasd');
+  document.querySelector('.video-services').play();
+})
+
+$('.services__video').mouseleave(function() {
+  console.log(document.querySelector('.video-services'));
+  document.querySelector('.video-services').pause();
+})
+
 
