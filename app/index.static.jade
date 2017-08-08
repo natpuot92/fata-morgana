@@ -28,10 +28,8 @@ body
         .page-header__phone-number
           a(href="tel: +78632410440")
             | +7 863 241-04-40
-        a(href="#").btn.page-header__phone-btn
+        a(href="#").btn.page-header__phone-btn.bg-btn
           | Заказать звонок
-          a(href="#").page-header__btn-gradient
-            | Заказать звонок
   main.main
     .services
       .services__item-block.services__video
@@ -51,8 +49,6 @@ body
           .services__btn-wrapper
             a(href="#").btn.btn-services
               | Подробнее
-            a(href="#").btn-services-gradient
-              | Подробнее
             span.btn-services-arrow
       .services__item-block.services__foto
         .services__item-block-1.services__foto-1
@@ -66,8 +62,6 @@ body
            | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
          .services__btn-wrapper
            a(href="#").btn.btn-services.btn-services
-             | Подробнее
-           a(href="#").btn-services-gradient
              | Подробнее
            span.btn-services-arrow
       .services__item-block.services__organisation
@@ -83,8 +77,6 @@ body
           .services__btn-wrapper
             a(href="#").btn.btn-services
               | Подробнее
-            a(href="#").btn-services-gradient
-              | Подробнее
             span.btn-services-arrow
       .services__item-block.services__air
         .services__item-block-1.services__air-1
@@ -98,8 +90,6 @@ body
             | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
           .services__btn-wrapper
             a(href="#").btn.btn-services
-              | Подробнее
-            a(href="#").btn-services-gradient
               | Подробнее
             span.btn-services-arrow
     .us
@@ -129,8 +119,6 @@ body
             .btn-wrapper__us-social
               a(href="#").btn.us-social-btn
                 | Вступить в группу вконтакте
-              a(href="#").us-social__btn-gradient
-                | Вступить в группу вконтакте
           .us-social-cont-1__slide.us-social-cont-1__slide-2
             .us-social__container-1-title
               | мы в социальных сетях
@@ -141,8 +129,6 @@ body
             .btn-wrapper__us-social
               a(href="#").btn.us-social-btn
                 | Вступить в группу вконтакте
-              a(href="#").us-social__btn-gradient
-                | Вступить в группу вконтакте
           .us-social-cont-1__slide.us-social-cont-1__slide-2
             .us-social__container-1-title
               | мы в социальных сетях
@@ -152,8 +138,6 @@ body
               | Lorem Ipsum используют потому, что тот обеспечивает
             .btn-wrapper__us-social
               a(href="#").btn.us-social-btn
-                | Вступить в группу вконтакте
-              a(href="#").us-social__btn-gradient
                 | Вступить в группу вконтакте
         .us-social__container-2
           .us-social__slider
@@ -176,8 +160,6 @@ body
               .services__btn-wrapper
                 a(href="#").btn.btn-services.btn-services-fix
                   | Подробнее
-                a(href="#").btn-services-gradient.btn-fotos-gradient
-                  | Подробнее
                 span.btn-services-arrow
         .fotos__wrapper-foto.fotos__wrapper-1-foto-2(data-foto = "foto2")
           .fotos__item-dark.fotos__item-dark-1
@@ -188,8 +170,6 @@ body
                 | Свадебная фотосессия
               .services__btn-wrapper
                 a(href="#").btn.btn-services.btn-services-fix
-                  | Подробнее
-                a(href="#").btn-services-gradient.btn-fotos-gradient
                   | Подробнее
                 span.btn-services-arrow
       .fotos__wrapper.fotos__wrapper-2
@@ -203,8 +183,6 @@ body
               .services__btn-wrapper
                 a(href="#").btn.btn-services.btn-services-fix
                   | Подробнее
-                a(href="#").btn-services-gradient.btn-fotos-gradient
-                  | Подробнее
                 span.btn-services-arrow
         .fotos__wrapper-foto.fotos__wrapper-2-foto-2(data-foto = "foto4")
           .fotos__item-dark.fotos__item-dark-1
@@ -215,8 +193,6 @@ body
                 | Свадебная фотосессия
               .services__btn-wrapper
                 a(href="#").btn.btn-services.btn-services-fix
-                  | Подробнее
-                a(href="#").btn-services-gradient.btn-fotos-gradient
                   | Подробнее
                 span.btn-services-arrow
       .fotos__wrapper.fotos__wrapper-3
@@ -230,8 +206,6 @@ body
               .services__btn-wrapper
                 a(href="#").btn.btn-services.btn-services-fix
                   | Подробнее
-                a(href="#").btn-services-gradient.btn-fotos-gradient
-                  | Подробнее
                 span.btn-services-arrow
         .fotos__wrapper-foto.fotos__wrapper-3-foto-2(data-foto = "foto6")
           .fotos__item-dark.fotos__item-dark-1
@@ -243,8 +217,6 @@ body
               .services__btn-wrapper
                 a(href="#").btn.btn-services.btn-services-fix
                   | Подробнее
-                a(href="#").btn-services-gradient.btn-fotos-gradient
-                  | Подробнее
                 span.btn-services-arrow
         .fotos__wrapper-foto.fotos__wrapper-3-foto-3(data-foto = "foto7")
           .fotos__item-dark.fotos__item-dark-1
@@ -255,8 +227,6 @@ body
                 | Свадебная фотосессия
               .services__btn-wrapper
                 a(href="#").btn.btn-services.btn-services-fix
-                  | Подробнее
-                a(href="#").btn-services-gradient.btn-fotos-gradient
                   | Подробнее
                 span.btn-services-arrow
     .how-work
@@ -371,79 +341,77 @@ body
               .contacts__item-light
                 | (863) 236-35-05
       .contacts__map#map
-    footer.page-footer
-      .container.footer-container
-        .page-footer__top-wrapper
-          .page-footer__top-wrapper-1
-            .page-footer__items.page-footer__items-1
-              a(href="#").page-footer__item
-                | О нас
-              a(href="#").page-footer__item
-                | Услуги
-              a(href="#").page-footer__item
-                | Портфолио
-              a(href="#").page-footer__item
-                | Отзывы
-              a(href="#").page-footer__item
-                | Блог
-              a(href="#").page-footer__item
-                | Контакты
-            .page-footer__items.page-footer__items-2
-              a(href="#").page-footer__item
-                | Свадебное фото
-              a(href="#").page-footer__item
-                | Свадебные фильмы
-              a(href="#").page-footer__item
-                | SDE
-              a(href="#").page-footer__item
-                | Love Story
-            .page-footer__items.page-footer__items-3
-              a(href="#").page-footer__item
-                | Аэросъемка
-              a(href="#").page-footer__item
-                | Корпоративные фильмы
-              a(href="#").page-footer__item
-                | Семейные фильмы
-              a(href="#").page-footer__item
-                | Организация мероприятия
-            .page-footer__contacts
-              .page-footer__tel
-                a(href="tel: +78632410440")
-                  | +7 863 241-04-40
-              .page-footer__btn-wrapper
-                a(href="#").btn.page-footer-btn
-                  | Заказать звонок
-                a(href="#").page-footer-btn__gradient
-                  | Заказать звонок
-              .page-footer__social-links
-                a(href="#").page-footer__social-link.page-footer__social-link-1
-                a(href="#").page-footer__social-link.page-footer__social-link-2
-                a(href="#").page-footer__social-link.page-footer__social-link-3
-                a(href="#").page-footer__social-link.page-footer__social-link-4
-                a(href="#").page-footer__social-link.page-footer__social-link-5
-                a(href="#").page-footer__social-link.page-footer__social-link-6
-        .page-footer__bottom-wrapper
-          .page-footer__copyright
-            | © Fatamorgana 2017
-          .page-footer__person
-            a(href="#")
-              | Обработка персональных данных
-          .page-footer__chilli
-            a(href="#")
-              | Chillicode
+  footer.page-footer
+    .container.footer-container
+      .page-footer__top-wrapper
+        .page-footer__top-wrapper-1
+          .page-footer__items.page-footer__items-1
+            a(href="#").page-footer__item
+              | О нас
+            a(href="#").page-footer__item
+              | Услуги
+            a(href="#").page-footer__item
+              | Портфолио
+            a(href="#").page-footer__item
+              | Отзывы
+            a(href="#").page-footer__item
+              | Блог
+            a(href="#").page-footer__item
+              | Контакты
+          .page-footer__items.page-footer__items-2
+            a(href="#").page-footer__item
+              | Свадебное фото
+            a(href="#").page-footer__item
+              | Свадебные фильмы
+            a(href="#").page-footer__item
+              | SDE
+            a(href="#").page-footer__item
+              | Love Story
+          .page-footer__items.page-footer__items-3
+            a(href="#").page-footer__item
+              | Аэросъемка
+            a(href="#").page-footer__item
+              | Корпоративные фильмы
+            a(href="#").page-footer__item
+              | Семейные фильмы
+            a(href="#").page-footer__item
+              | Организация мероприятия
+          .page-footer__contacts
+            .page-footer__tel
+              a(href="tel: +78632410440")
+                | +7 863 241-04-40
+            .page-footer__btn-wrapper
+              a(href="#").btn.page-footer-btn
+                | Заказать звонок
+            .page-footer__social-links
+              a(href="#").page-footer__social-link.page-footer__social-link-1
+              a(href="#").page-footer__social-link.page-footer__social-link-2
+              a(href="#").page-footer__social-link.page-footer__social-link-3
+              a(href="#").page-footer__social-link.page-footer__social-link-4
+              a(href="#").page-footer__social-link.page-footer__social-link-5
+              a(href="#").page-footer__social-link.page-footer__social-link-6
+      .page-footer__bottom-wrapper
+        .page-footer__copyright
+          | © Fatamorgana 2017
+        .page-footer__person
+          a(href="#")
+            | Обработка персональных данных
+        .page-footer__chilli
+          a(href="#")
+            | Chillicode
   .popup-fotos.hidden
     .overlay
       .popup__container.popup-fotos_container
-        .popup__btn-close.popup-btn__close
+        .popup__btn-close.popup-btn__close-fotos
         .popup__title.popup-fotos__title
           | Закажите фотосъемку
-        .popup-fotos__desc
+        .popup__desc.popup-fotos__desc
           | Оставьте Ваши данные или напишите интересующий вас вопрос и в течении 10 минут мы свяжемся с Вами
         form(action="#" method="#").popup-fotos__form#popup-fotos__form
-          .popup-fotos__form-container
-            input(type="text" name="fotos__name" placeholder="Имя").popup__fotos-form-input
-            input(type="tel" name="fotos__tel" placeholder="Телефон").popup__fotos-form-input
-            input(type="email" name="fotos__email" placeholder="Почта").popup__fotos-form-input
+          .popup__form-container.popup-fotos__form-container
+            input(type="text" name="fotos__name" placeholder="Имя").popup__form-input.popup__fotos-form-input
+            input(type="tel" name="fotos__tel" placeholder="Телефон").popup__form-input.popup__fotos-form-input
+            input(type="email" name="fotos__email" placeholder="Почта").popup__form-input.popup__fotos-form-input
           textarea(name="fotos__area" placeholder= "Ваше сообщение").popup__form-textarea
           label.checkbox-wrapper
             .checkbox-wrapper__checkbox
@@ -465,8 +433,40 @@ body
           .popup__btn-wrapper
             button(type="submit" href="#").btn.popup__btn-1
               | Отправить
-            button(type="submit" href="#").btn.popup__btn-2-gradient
-              | Отправить
+  .popup-ask
+    .overlay
+      .popup__container.popup-ask_container
+        .popup__btn-close.popup-btn__close-ask
+        .popup__title.popup-ask__title
+          | Задайте ваш вопрос
+        .popup__desc.popup-ask__desc
+          | Оставьте Ваши данные или напишите интересующий вас вопрос и в течении 10 минут мы свяжемся с Вами
+        form(action="#" method="#").popup-ask__form#popup-ask__form
+          .popup__form-container.popup-ask__form-container
+            input(type="text" name="ask__name" placeholder="Имя").popup__form-input.popup__ask-form-input
+            input(type="tel" name="ask__tel" placeholder="Телефон").popup__form-input.popup__ask-form-input
+            input(type="email" name="ask__email" placeholder="Почта").popup__form-input.popup__ask-form-input
+          textarea(name="ask__area" placeholder= "Ваше сообщение").popup__form-textarea
+          label.checkbox-wrapper
+            .checkbox-wrapper__checkbox
+              input(type="checkbox" id = "popup-ask__checkbox" name = "popup-ask__checkbox" checked).section1__form-checkbox
+              .checkbox.popup__checkbox
+                span.checkbox__circle
+                span.checkbox__yes
+                  | да
+                span.checkbox__no
+                  | нет
+            .checkbox-wrapper__text.checkbox-wrapper__text-popup
+              .checkbox-wrapper__text-1
+                | Даю согласие на
+                =' '
+                a(href="#")
+                  | Обработку персональных данных
+              .checkbox-wrapper__text-2
+                | *Ваши данные не будут переданы третьим лицам
+          .popup__btn-wrapper
+            button(type="submit" href="#").btn.popup__btn-1.popup__btn-ask
+              | Задать вопрос
   script(src="javascripts/vendor.js")
   script(src="javascripts/app.js")
 
@@ -474,215 +474,3 @@ body
     require('initialize');
 
   script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1NoA2BqGki3O7b9SUJVhCCLU-1uCFKKs&callback=initMap")
-
-  script.
-    function initMap() {
-        var place = {lat: 47.225190, lng: 39.662033};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 17,
-          center: place,
-          styles: [
-      {
-        "featureType": "all",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "saturation": "100"
-            },
-            {
-                "lightness": "-23"
-            },
-            {
-                "weight": "1.15"
-            },
-            {
-                "gamma": "1.30"
-            }
-        ]
-      },
-      {
-        "featureType": "all",
-        "elementType": "labels.text",
-        "stylers": [
-            {
-                "gamma": "1.00"
-            }
-        ]
-      },
-      {
-        "featureType": "administrative",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": "-100"
-            }
-        ]
-      },
-      {
-        "featureType": "administrative.province",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            },
-            {
-                "gamma": "1.41"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative.province",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "gamma": "1.52"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative.locality",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "lightness": "-20"
-            },
-            {
-                "gamma": "1.30"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": -100
-            },
-            {
-                "lightness": "63"
-            },
-            {
-                "visibility": "on"
-            },
-            {
-                "gamma": "0.63"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "labels.text",
-        "stylers": [
-            {
-                "gamma": "0.00"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": -100
-            },
-            {
-                "lightness": "28"
-            },
-            {
-                "visibility": "simplified"
-            },
-            {
-                "gamma": "0.67"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": "-100"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "all",
-        "stylers": [
-            {
-                "lightness": "30"
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "all",
-        "stylers": [
-            {
-                "lightness": "40"
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": -100
-            },
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "hue": "#ffff00"
-            },
-            {
-                "lightness": -25
-            },
-            {
-                "saturation": -97
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "labels",
-        "stylers": [
-            {
-                "lightness": -25
-            },
-            {
-                "saturation": -100
-            }
-            ]
-            }
-      ]
-        });
-        var imageMarker = 'images/label.png'
-        var marker = new google.maps.Marker({
-          position: place,
-          map: map,
-          icon: imageMarker
-        });
-      }
-
-
-
-
-
-

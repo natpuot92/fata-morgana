@@ -1624,3 +1624,16 @@
   animation-duration: 0.8s, 5s;
 }
 
+@keyframes bg-btn {
+  0% {
+    background: linear-gradient(30deg, #f7aa81, #ef5c53 55%, #d7456f);
+  }
+  100% {
+    background: none;
+  }
+}
+
+.bg-btn {
+  animation-name: bg-btn;
+  animation-duration: 0.8s;
+}

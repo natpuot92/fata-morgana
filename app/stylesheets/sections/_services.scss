@@ -21,13 +21,17 @@
 
 .services__video {
   display: block;
-  background-size: 120%;
+  background-image: url('../images/video.jpg');
+  background-size: cover;
 }
 
 .video-services {
   position: absolute;
+  z-index: -2;
   top: -56px;
   left: 0;
+  right: 0;
+  bottom: 0;
   padding-top: 56px;
   width: auto;
   height: 100vh;
@@ -139,7 +143,7 @@
 .btn-services {
   position: relative;
   width: 169px;
-  padding-top: 13px;
+  padding-top: 11px;
   padding-left: 31px;
   padding-right: 58px;
   height: 40px;
@@ -147,43 +151,15 @@
   color: #ffffff;
   line-height: 1;
 
-  background-image: linear-gradient(30deg, #f7aa81, #ef5c53 55%, #d7456f);
+  transition-duration: 0.3s;
+
+  background: #f36e5b;
+  border: 2px solid #f36e5b;
 
   &::after {
     content: '';
     position: absolute;
     right: 18px;
-    top: 8px;
-
-    display: block;
-    width: 21px;
-    height: 22px;
-
-    background: url('../images/btn-arrow-white.svg') no-repeat center;
-    background-size: contain;
-  }
-}
-
-.btn-services-gradient {
-  position: absolute;
-  right: 2px;
-  top: 2px;
-  width: 165px;
-  height: 36px;
-
-  opacity: 0;
-  font-size: 14px;
-  color: #fff;
-
-  border-radius: 20px;
-  padding: 6px 56px 3px 29px;
-  background: #f36e5b;
-  transition: opacity 0.3s;
-
-  &::after {
-    content: '';
-    position: absolute;
-    right: 16px;
     top: 6px;
 
     display: block;
@@ -195,8 +171,8 @@
   }
 }
 
-.btn-services-gradient:hover {
-  opacity: 1;
+.btn-services:hover {
+  background: none;
 }
 
 .btn-services-fix {

@@ -36,8 +36,14 @@
 
 .page-footer-btn {
   border: none;
-  background-image: linear-gradient(30deg, #f7aa81, #ef5c53 55%, #d7456f);
+  background: #f36e5b;
   color: #fff;
+  border: 2px solid #f36e5b;
+  transition-duration: 0.3s;
+
+  &:hover {
+    background: none;
+  }
 }
 
 .page-footer__contacts {
