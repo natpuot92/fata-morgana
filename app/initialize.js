@@ -87,10 +87,24 @@ $(window).scroll(function() {
 
 $('.popup-btn__close-fotos').click(function() {
   $('.popup-fotos').addClass('hidden');
+  $("html,body").css("overflow","auto");
 })
 
 $('.page-header__phone-btn').click(function() {
   $('.popup-fotos').removeClass('hidden');
+
+  $("html,body").css("overflow","hidden");
+
+//function OffScroll () {
+//  var winScrollTop = $(window).scrollTop();
+//  $(window).bind('scroll',function () {
+//
+//    $(window).scrollTop(winScrollTop);
+//  });}
+//
+//
+//  OffScroll ();  //Запустили отмену прокрутки
+//$(window).unbind('scroll'); //Выключить отмену прокрутки
 })
 
 $('.popup-btn__close-ask').click(function() {
