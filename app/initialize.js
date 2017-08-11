@@ -1,5 +1,6 @@
 import $ from "jquery"
 import slick from 'slick-carousel'
+import validation from 'jquery-validation'
 
 $(document).ready(function($) {
 
@@ -85,12 +86,15 @@ $(window).scroll(function() {
   }
 });
 
-$('.popup-btn__close-fotos').click(function() {
+$('.popup__btn-close').click(function() {
   $('.popup-fotos').addClass('hidden');
+  $('.popup-review').addClass('hidden');
+  $('.popup-ask').addClass('hidden');
   $("html,body").css("overflow","auto");
 })
 
-$('.page-header__phone-btn').click(function() {
+$('.page-header__phone-btn').click(function(evt) {
+  evt.preventDefault();
   $('.popup-fotos').removeClass('hidden');
 
   $("html,body").css("overflow","hidden");
@@ -105,11 +109,29 @@ $('.page-header__phone-btn').click(function() {
 //
 //  OffScroll ();  //Запустили отмену прокрутки
 //$(window).unbind('scroll'); //Выключить отмену прокрутки
+});
+
+$('.overlay').click(function(evt) {
+  if ($(evt.target).closest('.popup__container').length == 0) {
+    $('.popup-ask').addClass('hidden');
+    $('.popup-fotos').addClass('hidden');
+    $('.popup-review').addClass('hidden');
+    $("html,body").css("overflow","auto");
+  }
 })
+
 
 $('.popup-btn__close-ask').click(function() {
   $('.popup-ask').addClass('hidden');
-})
+  $("html,body").css("overflow","auto");
+});
+
+$('.page-footer-btn').click(function(evt) {
+  evt.preventDefault();
+  $('.popup-fotos').removeClass('hidden');
+
+  $("html,body").css("overflow","hidden");
+});
 
 var checkBox1 = $('#popup-fotos__checkbox');
 checkBox1.change(function() {
@@ -149,6 +171,25 @@ checkBox2.change(function() {
     };
 });
 
+  var checkBox3 = $('#popup-review__checkbox');
+checkBox3.change(function() {
+  if(checkBox3.prop('checked')) {
+    $('.checkbox__circle').animate({"left": "23px"}, "fast", function() {
+      $('.checkbox__yes').css("display", "block");
+      $('.checkbox__no').css("display", "none");
+      $('.popup__btn-1').prop('disabled', false);
+      $('.popup__btn-2-gradient').prop('disabled', false);
+    });
+  } else {
+    $('.checkbox__circle').animate({"left": "0"}, "fast", function() {
+      $('.checkbox__yes').css("display", "none");
+      $('.checkbox__no').css("display", "block");
+      $('.popup__btn-1').prop('disabled', true);
+      $('.popup__btn-2-gradient').prop('disabled', true);
+    });
+    };
+});
+
 });
 
 
@@ -160,6 +201,115 @@ $('.services__video').mouseover(function() {
 $('.services__video').mouseleave(function() {
   document.querySelector('.video-services').pause();
 })
+
+$("#popup-review__form").validate({
+  rules: {
+    review__name: {
+    required: true
+  },
+    review__area: {
+      required: true
+  },
+    popup_review__checkbox: {
+      required: true
+    }
+  },
+  messages: {
+    review__name: {
+      required: 'укажите ваше имя'
+    },
+    review__area: {
+      required: 'введите ваше сообщение'
+    }
+  },
+
+  submitHandler: function(form) {
+
+  }
+})
+
+$("#popup-fotos__form").validate({
+  rules: {
+    fotos__name: {
+      required: true
+  },
+    fotos__tel: {
+      required: true,
+      digits: true
+    },
+    fotos__email: {
+      required: true,
+      email: true
+    },
+    fotos__area: {
+      required: true
+  },
+    popup_review__checkbox: {
+      required: true
+    }
+  },
+  messages: {
+    fotos__name: {
+      required: 'укажите ваше имя'
+    },
+    fotos__tel: {
+      required: 'укажите ваш телефон',
+      digits: 'только цифры'
+    },
+    fotos__email: {
+      required: 'укажите ваш email',
+      email: 'некорректрый email'
+    },
+    fotos__area: {
+      required: 'введите ваше сообщение'
+    }
+  },
+  submitHandler: function(form) {
+
+  }
+})
+
+$("#popup-ask__form").validate({
+  rules: {
+    ask__name: {
+      required: true
+  },
+    ask__tel: {
+      required: true,
+      digits: true
+    },
+    ask__email: {
+      required: true,
+      email: true
+    },
+    ask__area: {
+      required: true
+  },
+    popup_review__checkbox: {
+      required: true
+    }
+  },
+  messages: {
+    ask__name: {
+      required: 'укажите ваше имя'
+    },
+    ask__tel: {
+      required: 'укажите ваш телефон',
+      digits: 'только цифры'
+    },
+    ask__email: {
+      required: 'укажите ваш email',
+      email: 'некорректрый email'
+    },
+    ask__area: {
+      required: 'введите ваше сообщение'
+    }
+  },
+  submitHandler: function(form) {
+
+  }
+})
+
 
     window.initMap = function() {
         var place = {lat: 47.225190, lng: 39.662033};

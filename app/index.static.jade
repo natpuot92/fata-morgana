@@ -409,10 +409,15 @@ body
           | Оставьте Ваши данные или напишите интересующий вас вопрос и в течении 10 минут мы свяжемся с Вами
         form(action="#" method="#").popup-fotos__form#popup-fotos__form
           .popup__form-container.popup-fotos__form-container
-            input(type="text" name="fotos__name" placeholder="Имя").popup__form-input.popup__fotos-form-input
-            input(type="tel" name="fotos__tel" placeholder="Телефон").popup__form-input.popup__fotos-form-input
-            input(type="email" name="fotos__email" placeholder="Почта").popup__form-input.popup__fotos-form-input
-          textarea(name="fotos__area" placeholder= "Ваше сообщение").popup__form-textarea
+            .form-block.form-block-fotos
+              input(type="text" name="fotos__name" placeholder="Имя").popup__form-input.popup__fotos-form-input
+            .form-block.form-block-fotos
+              input(type="tel" name="fotos__tel" placeholder="Телефон").popup__form-input.popup__fotos-form-input
+            .form-block.form-block-fotos
+              input(type="email" name="fotos__email" placeholder="Почта").popup__form-input.popup__fotos-form-input
+
+          .form-block
+            textarea(name="fotos__area" placeholder= "Ваше сообщение").popup__form-textarea
           label.checkbox-wrapper
             .checkbox-wrapper__checkbox
               input(type="checkbox" id = "popup-fotos__checkbox" name = "popup-fotos__checkbox" checked).section1__form-checkbox
@@ -443,10 +448,14 @@ body
           | Оставьте Ваши данные или напишите интересующий вас вопрос и в течении 10 минут мы свяжемся с Вами
         form(action="#" method="#").popup-ask__form#popup-ask__form
           .popup__form-container.popup-ask__form-container
-            input(type="text" name="ask__name" placeholder="Имя").popup__form-input.popup__ask-form-input
-            input(type="tel" name="ask__tel" placeholder="Телефон").popup__form-input.popup__ask-form-input
-            input(type="email" name="ask__email" placeholder="Почта").popup__form-input.popup__ask-form-input
-          textarea(name="ask__area" placeholder= "Ваше сообщение").popup__form-textarea
+            .form-block.form-block-ask
+              input(type="text" name="ask__name" placeholder="Имя").popup__form-input.popup__ask-form-input
+            .form-block.form-block-ask
+              input(type="tel" name="ask__tel" placeholder="Телефон").popup__form-input.popup__ask-form-input
+            .form-block.form-block-ask
+              input(type="email" name="ask__email" placeholder="Почта").popup__form-input.popup__ask-form-input
+          .form-block
+            textarea(name="ask__area" placeholder= "Ваше сообщение").popup__form-textarea
           label.checkbox-wrapper
             .checkbox-wrapper__checkbox
               input(type="checkbox" id = "popup-ask__checkbox" name = "popup-ask__checkbox" checked).section1__form-checkbox
@@ -467,6 +476,49 @@ body
           .popup__btn-wrapper
             button(type="submit" href="#").btn.popup__btn-1.popup__btn-ask
               | Задать вопрос
+  .popup-review.hidden
+    .overlay
+      .popup__container.popup-review_container
+        .popup__btn-close.popup-btn__close-review
+        .popup__title.popup-review__title
+          | Оставьте ваш отзыв
+        .popup__desc.popup-review__desc
+          | Если Вы воспользовались нашими услугами - напишите отзыв о работе с нами!
+        form(action="#" method="#").popup-review__form#popup-review__form
+          .popup__form-container.popup-review__form-container
+            .form-block.form-block-review
+              input(type="text" name="review__name" placeholder="Имя").popup__form-input.popup__review-form-input
+          .form-block.form-block-review
+            textarea(name="review__area" placeholder= "Ваше сообщение").popup__form-textarea
+          label.checkbox-wrapper
+            .checkbox-wrapper__checkbox
+              input(type="checkbox" id = "popup-review__checkbox" name = "popup_review__checkbox" checked).section1__form-checkbox
+              .checkbox.popup__checkbox
+                span.checkbox__circle
+                span.checkbox__yes
+                  | да
+                span.checkbox__no
+                  | нет
+            .checkbox-wrapper__text.checkbox-wrapper__text-popup
+              .checkbox-wrapper__text-1
+                | Даю согласие на
+                =' '
+                a(href="#")
+                  | Обработку персональных данных
+              .checkbox-wrapper__text-2
+                | *Ваши данные не будут переданы третьим лицам
+          .popup__btn-wrapper
+            button(type="submit" href="#").btn.popup__btn-1.popup__btn-review
+              | Оставить отзыв
+  .popup-success.hidden
+    .overlay
+      .popup__container.popup-success_container-big
+        .popup__btn-close.popup-btn__close-success
+        .popup__title.popup-success__title
+          | Благодарим за обращение
+        .popup__desc.popup-success__desc
+          | Ваши данные отправлены, мы свяжемся с Вами в течении 2 минут
+        .cat-foto
   script(src="javascripts/vendor.js")
   script(src="javascripts/app.js")
 

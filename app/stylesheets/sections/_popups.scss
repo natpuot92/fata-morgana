@@ -71,6 +71,14 @@
   }
 }
 
+.popup__btn-close:hover::after {
+  background: #000000
+}
+
+.popup__btn-close:hover::before {
+  background: #000000
+}
+
 .popup__title {
   margin-bottom: 30px;
 
@@ -107,7 +115,6 @@
 }
 
 .popup__form-textarea {
-  margin-top: 23px;
   width: 100%;
   min-height: 120px;
   padding-left: 23px;
@@ -247,12 +254,77 @@ span.checkbox__no {
   }
 }
 
-.popup__btn-ask {
-
-}
-
 .popup__btn-2-gradient:hover {
   opacity: 1;
   color: #000;
 }
 
+.popup-review_container {
+  max-width: 735px;
+  width: 100%;
+}
+
+.popup-review__form-container {
+  max-width: 100%;
+  width: 100%;
+}
+
+.form-block-fotos {
+  max-width: 257px;
+  width: 100px;
+}
+
+.form-block-ask {
+  max-width: 257px;
+  width: 100px;
+}
+
+.popup__review-form-input {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+.popup-review__desc {
+  max-width: 311px;
+  width: 100%;
+  line-height: 24px;
+}
+
+.popup__btn-review {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.checkbox-wrapper__text-popup {
+  flex-wrap: wrap;
+}
+
+.form-block {
+  width: 100%;
+  position: relative;
+  margin-top: 23px;
+
+}
+
+.btn:disabled {
+  opacity: 0.5;
+}
+
+input.valid,
+textarea.valid {
+  border: 1px solid #ffb993;
+}
+
+input.error,
+textarea.error{
+  border: 1px solid #d94d71;
+}
+
+label.error {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #d94d71;
+  font-size: 12px;
+}
